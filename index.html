@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--Título y Descripción de la Página x cada página del sitio web-->
+        <meta title="BOLIVAR">
+        <title>BOLIVAR</title>
+        
+        <meta name="description" content="descripci+o de página de Inicio"/>
+        
+        <!--Codificación de Caracteres en Español e Inglés-->
+        <meta charset="utf-8">
+        
+        <!--Meta del Responsive // Media Queries-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--Normalize, Modernizr y Prefix Free desde CDN-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        
+        <!--Normalize, Modernizr y Prefix Free desde CDN-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        
+        <!--Llamado a Font Awesome Icons-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        
+        <!--Llamado a Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Alice&family=Bevan&display=swap" rel="stylesheet">
+        
+        <!--Llamado a CSS propio-->
+        <link rel="stylesheet" href="css/estilo.css">
+        
+    </head>
+    
+    <body>
+        	<!--Menú Principal-->
+	<aside id="menu-cortina">
+
+		<!--Botón abrir menú-->
+		<a href="#" id="abrir">
+			<i class="fas fa-bars"></i>
+		</a>
+
+		<!--Botón cerrar menú-->
+		<a href="#" id="cerrar">
+			<i class="fas fa-times"></i>
+		</a>
+
+		<nav id="menu-idiomas-movil">
+			<a href="index.html">ES</a>
+			<a href="home.html">EN</a>
+		</nav>
+
+		<nav id="menu-principal">
+			<a href="index.html">INICIO</a>
+			<a href="proyecto.html">PROYECTO</a>
+			<a href="sobre-mi.html">SOBRE MI</a>
+			<a href="#">HABLEMOS</a>
+		</nav>
+
+	</aside>
+        
+        
+        <!--HEADER-->
+        <header>
+             <!--MENU-IDIOMA-->
+                <nav id="menu-idioma">
+                    <a href="index.html">ES</a>
+                    <a href="home.html">EN</a>
+                </nav>
+            
+             
+        </header>
+        
+        
+<!--MAIN-->
+        <main>
+            <section id="pagina-inicio">
+                  <article> 
+                        <h1>.BOLÍVAR.</h1>
+                        <h3>FOTOGRAFÍA</h3>
+
+                        <!--REDES-SOCIALES-->
+                        <nav id="menu-redes-sociales">
+
+                            <a href="#" target="_blank">
+                                 <i class="fab fa-facebook"></i>
+                            </a>
+
+                            <a href="#" target="_blank">
+                                 <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <a href="#" target="_blank">
+                                <i class="fab fa-behance"></i>
+                            </a>
+
+                        </nav>
+                    </article>
+            </section>
+        </main>
+        
+           <!--Zona donde van los archivos JavaScript-->
+        <!--Llamado a librería jQuery principal desde CDN-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>>
+
+        <script src="js/script.js"></script>
+        <script> 
+            $(document).ready(function(){
+                
+                $('#cerrar').hide();
+                
+                $('#abrir').click(function(){
+                    $('#menu-cortina').animate({
+                        right: 0
+                    },500);
+                    $('#abrir').hide();
+                    $('#cerrar').show();
+                    event.preventDefault();
+            });
+                                   
+            $('#cerrar').click(function(){
+                    $('#menu-cortina').animate({
+                        right: -290
+                    },500);
+                    $('#cerrar').hide();
+                    $('#abrir').show();
+                    event.preventDefault();
+            });
+        });
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
